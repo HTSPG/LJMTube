@@ -1,0 +1,28 @@
+{
+  "name": "ljmtube",
+  "version": "1.0.0",
+  "description": "Lee's media content",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HTSPG/LJMTube.git"
+  },
+  "author": "LJM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HTSPG/LJMTube/issues"
+  },
+  "homepage": "https://github.com/HTSPG/LJMTube#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "nodemon": "^2.0.15"
+  }
+}
