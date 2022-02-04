@@ -4,7 +4,7 @@ import { search, trending } from "../controllers/videoController";
 
 const globalRouter = express.Router();
 
-const handleHome = (req, res) => res.send("Home");
+const handleHome = (req, res) => res.render("home", { pageTitle: "Home" });
 
 globalRouter.get("/", handleHome);
 globalRouter.get("/join", join);
