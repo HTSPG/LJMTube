@@ -10,7 +10,7 @@ export const protectorMiddleware = (req, res, next) => {
   if (req.session.loggedIn) {
     return next();
   } else {
-    return res.render("/login");
+    return res.redirect("/login");
   }
 };
 
