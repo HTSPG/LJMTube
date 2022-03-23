@@ -6,9 +6,7 @@ import {
   uploadFiles,
 } from "../../middlewares";
 import {
-  edit,
   logout,
-  remove,
   see,
   getEdit,
   postEdit,
@@ -27,7 +25,6 @@ userRouter
   .all(protectorMiddleware)
   .get(getEdit)
   .post(avatarUpload.single("avatar"), postEdit);
-userRouter.get("/remove", remove);
 userRouter.get("/logout", logout);
 userRouter
   .route("change-password")
